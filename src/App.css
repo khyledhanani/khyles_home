@@ -1,0 +1,315 @@
+*{
+  font-family: "Roboto"; /* Ensures all text uses Dejavu Sans */
+  font-style: normal;
+  font-variant: normal;
+  line-height: 23px;
+  scroll-behavior: smooth; /* Smooth scrolling for all elements */
+}
+
+/* Navigation bar and links */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-bar {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  top: 0;         /* Ensures it sticks to the top of the viewport */
+  left: 0;        /* Aligns to the left edge of the viewport */
+  right: 0;       /* Aligns to the right edge of the viewport */
+  position: fixed;/* Fixes the navbar's position relative to the viewport */
+  background-color: #fff; /* Gives a background color to ensure text is readable over page content */
+  z-index: 1000;  /* Ensures it stays on top of other content */
+}
+
+.nav-link {
+  margin: 0 20px; /* Slightly larger spacing */
+  text-decoration: none;
+  color: black;
+  font-size: 20px; /* Larger font size for better visibility */
+  padding: 10px; /* Larger click area */
+  position: relative; /* Positioning context for pseudo-elements */
+  overflow: hidden; /* Ensures the pseudo-element does not overflow */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: black; /* Color of the underline */
+  height: 2px; /* Thickness of the underline */
+  transition: right 0.3s ease; /* Transition for the animating effect */
+}
+
+.nav-link:hover::after {
+  right: 0; /* End state when hovered */
+}
+
+.nav-link:hover {
+  color: #555; /* Optional: change color on hover */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;  /* Centers the container horizontally */
+  margin-right: auto; /* Centers the container horizontally */
+}
+
+.about-image {
+    width: 200px;  /* Default width for larger screens */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 50%;  /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+    border: 3px solid #fff;  /* White border around the image */
+    margin-bottom: 20px;  /* Space below the image */
+    object-fit: cover;  /* Ensures the image covers the area without distorting */
+}
+
+.about-me {
+  width: 60%;
+  margin: 20px auto; /* Centers the HR horizontally */
+}
+
+/* Media queries for tablet devices */
+@media (max-width: 768px) {
+    .about-image {
+        width: 150px;  /* Smaller width for tablet devices */
+    }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 480px) {
+    .about-image {
+        width: 120px;  /* Even smaller width for mobile devices */
+    }
+}
+
+
+
+.content-flex {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  justify-content: center;
+  width: 100%;
+  gap: 20px; /* Adds space between the image and paragraph */
+}
+
+hr {
+  width: 60%;
+  margin: 20px auto; /* Centers the HR horizontally */
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* Adjust color as needed */
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin: 0 auto 20px; /* Center image and add margin below on small screens */
+    }
+
+    .about-content p {
+        flex-basis: 100%; /* Full width on small screens */
+    }
+}
+
+/* Center content styles */
+.center-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-logo {
+  width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.experience-projects-container {
+    display: flex;
+    justify-content: center; /* Ensures the container is centered */
+    align-items: flex-start; /* Keeps items aligned at the top */
+    padding: 40px 0; /* Adds more vertical padding for better spacing */
+    margin: auto; /* Centers the container horizontally */
+    gap: 30px; /* Adds space between the two columns */
+}
+
+.work-experience, .projects {
+    width: 60%; /* Adjust to 50% to equally divide the space */
+    padding: 20px;
+    background-color: #f8f9fa; /* A light background color for each section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+
+.work-experience h3, .projects h3 {
+    color: #343a40; /* Dark grey color for headers */
+    margin-bottom: 20px; /* More space below headers */
+}
+
+/* Project display styling */
+.PROJ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.proj-list-container {
+  margin-top: 20px;
+  flex: 1;    
+}
+
+.PROJ li {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.PROJ li:hover, .PROJ li.active {
+    background-color: #f2f2f2;  /* Light grey contemporary background for active or hovered item */
+    transform: scale(1.002); /* Slightly scale up on hover */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.activelis {
+    background-color: #f2f2f2;  /* Light grey contemporary background for active or hovered item */
+    transform: scale(1.002); /* Slightly scale up on hover */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.proj-hr {
+    width: 100%;
+    margin: 20px auto; /* Centers the HR horizontally */
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Adjust color as needed */
+}
+
+.flex-containerp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    align-items: center;
+}
+
+.flex-containerp > div {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    align-items: center
+}
+
+.PROJ > h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+
+  .github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; /* GitHub's dark grey */
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Spacing from the image */
+  width: 60%; /* Remove the quotes around the width value */
+  margin-left: auto; /* Add this to center the element horizontally */
+  margin-right: auto; /* Add this to center the element horizontally */
+}
+
+.github-link:hover, .github-link:focus {
+    background-color: #2c2f31; /* Lighter grey on hover/focus */
+    color: #fff;
+    text-decoration: none;
+}
+
+.github-icon {
+    font-size: 20px; /* Larger icon size */
+    margin-right: 10px; /* More space between the icon and text */
+}
+ 
+
+.github-div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transform: translateY(20px);
+}
+
+
+
+/* Styling for headings */
+h1 {
+  font-size: 48px; /* Large size for main heading */
+  font-weight: 700; /* Bold font weight for headings */
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 24px; /* Appropriately smaller than h1 but still significant */
+  font-weight: 700; /* Bold font weight for subheadings */
+  margin: 10px 0;
+}
+
+/* Paragraph and preformatted text styles */
+p, blockquote, pre {
+  font-weight: 400; /* Normal font weight for text bodies and quotes */
+}
+
+blockquote, pre {
+  font-size: 17px; /* Specific size for blockquotes and preformatted text */
+}
+
+p {
+  font-size: 14px; /* Standard text size for paragraphs */
+}
+
+pre {
+  font-size: 11px; /* Smaller text size for code or preformatted areas */
+}
