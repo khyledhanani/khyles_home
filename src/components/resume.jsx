@@ -27,7 +27,7 @@ function Resume() {
                     <h1>Resume</h1>
                     <a style={{ textDecoration: 'none', color: '#fff', backgroundColor: '', padding: '10px 20px', borderRadius: '5px', marginTop: '20px' }} className="CV_button" href={require("./KhyleCV24.pdf")} download="KhyleDhananiCV">Click here to download my CV</a>
                 </div>
-                <img src="/khylecv24j.jpg" alt="Resume" style={{ maxWidth: '100%', height: 'auto', borderRadius: '5px', marginTop: '20px' }} />
+                <img src="/khyleCV24j.jpg" alt="Resume" style={{ maxWidth: '100%', height: 'auto', borderRadius: '5px', marginTop: '20px' }} />
             </div>
     );
 }
