@@ -17,7 +17,6 @@ function Resume() {
     };
 
     return (
-        <>
             <div id="resume" style={styles} className="RES">
                 <div style={{ 
                     gap: '80px',
@@ -30,7 +29,6 @@ function Resume() {
                 </div>
                 <img src="/khylecv24j.jpg" alt="Resume" style={{ maxWidth: '100%', height: 'auto', borderRadius: '5px', marginTop: '20px' }} />
             </div>
-        </>
     );
 }
 
