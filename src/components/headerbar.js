@@ -9,6 +9,7 @@ function Landing() {
         <a href="#projects" className="nav-link">Projects</a>
         <a href="#resume" className="nav-link">Resume</a>
         <a href="https://github.com/khyledhanani" target="_blank" rel="noreferrer"  className="nav-link">Github</a>
+        <a href="https://www.linkedin.com/in/khyledhanani" target="_blank" rel="noreferrer" className="nav-link">LinkedIn</a>
       </nav>
       <div className="center-content">
         <img 
