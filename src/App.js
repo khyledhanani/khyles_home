@@ -3,6 +3,7 @@ import Landing from './components/headerbar';
 import About from './components/about';
 import ProjectsDisplay from './components/projects';
 import Resume from './components/resume';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <hr></hr>
       <ProjectsDisplay/>
       <Resume />
+      <Analytics/>
     </div>
 );
 }
