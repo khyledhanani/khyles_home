@@ -92,6 +92,14 @@
     .about-image {
         width: 150px;  /* Smaller width for tablet devices */
     }
+    .nav-link {
+        font-size: 12px; /* Smaller font size for tablet devices */
+        overflow: visible; /* Ensures the underline is visible */
+    }
+
+    .hiddenpart {
+      display: none;
+    }
 }
 
 /* Media queries for mobile devices */

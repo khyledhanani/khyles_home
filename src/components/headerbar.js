@@ -21,9 +21,9 @@ function Landing() {
         />
         <h1>Khyle Dhanani</h1>
         <h3>Bachelor of Mathematics</h3>
-        <h3>Specializing in Math/Financial Analysis and Risk Management</h3>
+        <h3 className="hiddenpart">Specializing in Math/Financial Analysis and Risk Management</h3>
         <h3>Minor in Computing</h3>
-        <h3>My interests range from traditional finance and stochastic calculus all the way to machine learning and linear algebra!</h3> 
+        <h3 className="hiddenpart">My interests range from traditional finance and stochastic calculus all the way to machine learning and linear algebra!</h3> 
       </div>
     </div>
   );
