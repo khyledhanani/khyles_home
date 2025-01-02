@@ -8,7 +8,7 @@ function ProjectsDisplay() {
     const projects = {
         project4: {
             name: "WageX Inc. - An online sports betting platform that operates like an exchange rather than a bookmaker (MVP is Out, we are running a private beta in the coming weeks (Early 2025)!!!)",
-            description: "WageX is a pioneering sports betting platform that I co-founded, which operates as a peer-to-peer exchange rather than a traditional bookmaker. This innovative approach allows users to both back and lay bets, similar to a stock exchange for sports betting. The platform eliminates the traditional bookmaker's margin, offering users better odds and a more transparent betting experience.\n\n" +
+            description: "https://www.wagex.xyz. WageX is a pioneering sports betting platform that I co-founded, which operates as a peer-to-peer exchange rather than a traditional bookmaker. This innovative approach allows users to both back and lay bets, similar to a stock exchange for sports betting. The platform eliminates the traditional bookmaker's margin, offering users better odds and a more transparent betting experience.\n\n" +
                         "Tech Stack:\n" +
                         "• Frontend: TypeScript & Next.js (utilized primarily for routing while maintaining separation of concerns), enhanced with React Query and Zustand for efficient data fetching and state management\n" +
                         "• Backend Microservices: Express.js powering critical services including user management, trade processing, and banking operations\n" +
